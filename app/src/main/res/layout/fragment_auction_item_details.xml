@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/auction_item_details_description"
+    android:fitsSystemWindows="false">
+
+    <Button
+        android:id="@+id/auction_item_current_bid"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bid_status_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/_button"
+        android:text="@string/current_bid_amount"
+        android:textAllCaps="false"
+        android:textColor="@color/auction_item_details_button"
+        android:textSize="@dimen/auction_item_title"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/auction_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auction_item_current_bid"
+        android:gravity="center"
+        android:background="@color/auction_item_detail_title"
+        android:textColor="@color/fragment_bg_white"
+        android:textSize="@dimen/auction_item_title"
+        android:padding="10dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+    <FrameLayout
+        android:id="@+id/auction_item_images_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fragment_bg_grey"
+        android:layout_below="@id/auction_item_title"
+        >
+
+        <com.shail.auctionapp.views.AuctionDetailsImageViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        />
+
+        <com.shail.auctionapp.views.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/circle_indicator_height"
+            android:background="@color/auction_item_details_dots_indicator_bg"
+            android:padding="10dip"
+            app:centered="true"
+            android:layout_gravity="bottom|center_horizontal"
+            app:fillColor="@color/circle_indicator_fill_color"
+            app:pageColor="@color/circle_indicator_page_color"
+            app:snap="false"
+        />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/auction_item_sponsor_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auction_item_images_view_pager"
+        android:padding="@dimen/activity_vertical_margin"
+        android:singleLine="true"
+        android:textSize="@dimen/auction_sponsoredby"
+    />
+
+    <TextView
+        android:id="@+id/auction_item_winner_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auction_item_sponsor_info"
+        android:padding="@dimen/activity_vertical_margin"
+        android:singleLine="false"
+        android:textColor="@color/_button_bg"
+        android:textSize="@dimen/auction_sponsoredby"
+    />
+
+    <ScrollView
+        android:id="@+id/auction_item_description_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/auction_item_place_bid"
+        android:layout_below="@id/auction_item_winner_info"
+        >
+
+        <TextView
+            android:id="@+id/auction_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="@dimen/auction_description_textsize"
+        />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/auction_item_place_bid"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/place_bid_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/_button"
+        android:text="@string/place_bid"
+        android:textAllCaps="false"
+        android:textColor="@color/auction_item_details_button"
+        android:textSize="@dimen/auction_item_title"
+        android:textStyle="bold"
+    />
+</RelativeLayout>

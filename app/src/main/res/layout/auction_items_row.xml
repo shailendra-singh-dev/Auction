@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shail.auctionapp.views.AspectRatioRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/auction_item_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:id="@+id/auction_item_title_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/auction_sponsoredby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/auctions_title_left_padding"
+            android:singleLine="true"
+            android:textColor="@color/fragment_bg_white"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/auction_sponsoredby" />
+
+        <TextView
+            android:id="@+id/auction_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/auctions_title_left_padding"
+            android:singleLine="true"
+            android:textColor="@color/fragment_bg_white"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/auction_title" />
+
+    </LinearLayout>
+</com.shail.auctionapp.views.AspectRatioRelativeLayout>

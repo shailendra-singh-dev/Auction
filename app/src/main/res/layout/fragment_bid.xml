@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg_white"
+    android:fitsSystemWindows="false">
+
+    <Button
+        android:id="@+id/current_bid"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bid_status_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/_button"
+        android:textAllCaps="false"
+        android:textColor="@color/auction_item_details_button"
+        android:textSize="@dimen/auction_item_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/current_bid_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_bid"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="@string/current_bid_info" />
+
+    <LinearLayout
+        android:id="@+id/enter_bid_box_partent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/enter_bid_box_height"
+        android:layout_below="@id/current_bid_info"
+        android:layout_marginLeft="@dimen/enter_bid_box_margin_horizontal"
+        android:layout_marginRight="@dimen/enter_bid_box_margin_vertical"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/enter_bid_text_margin_right"
+            android:gravity="left|start"
+            android:text="@string/enter_bid" />
+
+        <EditText
+            android:id="@+id/enter_bid_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:background="@drawable/rectangle_rounded"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:ems="10"
+            android:hint="@string/enter_bid_hint"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/enter_bid_padding_horizontal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_bid"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/place_bid_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/_button"
+        android:text="@string/submit_bid"
+        android:textAllCaps="false"
+        android:textColor="@color/auction_item_details_button"
+        android:textSize="@dimen/auction_item_title"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+

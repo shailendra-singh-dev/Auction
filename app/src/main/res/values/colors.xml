@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="auction_background">#ececec</color>
+
+    <!--Top Bar-->
+    <color name="top_bar">#1e428a</color>
+    <color name="auctions_item_view_bg">#ececec</color>
+
+    <!--Auction Item Details Page -->
+    <color name="circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="circle_indicator_page_color">#BEBEBE</color>
+    <color name="circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="auction_item_details_description">#FFFFFFFF</color>
+    <color name="auction_item_details_button">#FFFFFFFF</color>
+    <color name="auction_item_details_dots_indicator_bg">#00000000</color>
+    <color name="auction_item_detail_title">#464749</color>
+
+    <!--Common UI controls-->
+    <color name="_button_bg">#00ade1</color>
+    <color name="fragment_bg_grey">#414042</color>
+    <color name="fragment_bg_white">@android:color/white</color>
+
+    <!--Bid-->
+    <color name="enter_bid_bg_color">#E3E3E3</color>
+    <color name="enter_bid_text">#616161</color>
+
+    <!--Auction Items-->
+    <color name="auction_items_top_title">#464749</color>
+
+    <color name="accent">#232323</color>
+    <color name="gray_background">#757575</color>
+    <color name="_loading_color">#40000000</color>
+    <color name="grey_light">#E0E0E0</color>
+
+</resources>

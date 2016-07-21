@@ -1,0 +1,171 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg_white"
+    tools:context="com.shail.auctionapp.ui.creditcards.CreditCardAddFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/credit_card_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/credit_card_scan_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:background="@drawable/_button"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/credit_card_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:drawableRight="@android:drawable/ic_menu_camera"
+                android:gravity="center"
+                android:text="SCAN CARD"
+                android:textColor="@color/auction_item_details_button" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/login_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/credit_card_scan_parent"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/credit_card_email_horizontal_margin"
+            android:layout_marginRight="@dimen/credit_card_email_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/login_email"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/credit_card_add_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/login_email_id"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/credit_card_email_horizontal_margin"
+            android:layout_marginRight="@dimen/credit_card_email_horizontal_margin"
+            android:background="@drawable/rectangle_rounded"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/enter_bid_padding_horizontal" />
+
+
+        <TextView
+            android:id="@+id/card_number_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/credit_card_add_email"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/credit_card_email_horizontal_margin"
+            android:layout_marginRight="@dimen/credit_card_email_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/card_number"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/credit_card_add_cardnum"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/card_number_id"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/credit_card_email_horizontal_margin"
+            android:layout_marginRight="@dimen/credit_card_email_horizontal_margin"
+            android:background="@drawable/rectangle_rounded"
+            android:singleLine="true"
+            android:nextFocusForward="@+id/credit_card_expire"
+            android:nextFocusDown="@+id/credit_card_add_cardexpire"
+            android:nextFocusRight="@+id/credit_card_add_cardexpire"
+            android:ems="10"
+            android:hint="@string/enter_card_number"
+            android:inputType="number"
+            android:padding="@dimen/enter_bid_padding_horizontal" />
+
+
+        <LinearLayout
+            android:id="@+id/expire_cvv_info_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/credit_card_add_cardnum"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/credit_card_email_horizontal_margin"
+            android:layout_marginRight="@dimen/credit_card_email_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/expires"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cvv"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/credit_card_add_cardexpire_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/expire_cvv_info_parent"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/credit_card_email_horizontal_margin"
+            android:layout_marginRight="@dimen/credit_card_email_horizontal_margin"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/credit_card_add_cardexpire"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:ems="10"
+                android:hint="@string/expires"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+            <EditText
+                android:id="@+id/credit_card_add_cardcvv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:ems="10"
+                android:hint="@string/cvv"
+                android:inputType="number"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+

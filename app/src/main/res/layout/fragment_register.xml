@@ -1,0 +1,172 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/login_email_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:text="@string/register_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/login_title_text_size" />
+
+        <LinearLayout
+            android:id="@+id/register_first_name_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/login_email_title"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/login_margin_bottom"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/register_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_title_text_size" />
+
+            <EditText
+                android:id="@+id/register_first_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:ems="10"
+                android:hint="@string/enter_first_name"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_last_name_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/login_email_title"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/login_margin_bottom"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_title_text_size" />
+
+            <EditText
+                android:id="@+id/register_last_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:ems="10"
+                android:hint="@string/enter_last_name"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_email_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/login_email_title"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/login_margin_bottom"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/email"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_title_text_size" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:ems="10"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_password_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/login_email_title"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/login_margin_bottom"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/login_password"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_title_text_size" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:ems="10"
+                android:hint="@string/enter_password"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_register"
+            style="@style/Base.TextAppearance.AppCompat"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/login_button_height"
+            android:background="@color/_button_bg"
+            android:text="@string/register_button"
+            android:textAllCaps="false"
+            android:textColor="@color/fragment_bg_white"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>

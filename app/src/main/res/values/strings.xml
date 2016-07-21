@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">AuctionApp</string>
+
+    <string name="title_none">AuctionApp</string>
+
+    <!-- Settings Screen -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_intro_text"> is the app for bidding on sports memorabilia and experiences whether at home or at the game.</string>
+    <string name="splash_intro_button">Let\'s do this!</string>
+
+    <!-- Auctions Screen -->
+    <string name="auctions_more">More</string>
+    <string name="screen_auctions">AUCTIONS</string>
+    <string name="auctions_my_bids">My Bids</string>
+
+    <!-- Auction Items Screen -->
+    <string name="auctions_items_more">More</string>
+    <string name="auctions_items_auctions">Auctions</string>
+    <string name="screen_auction_items">ITEMS</string>
+    <string name="auctions_items_my_bids">My Bids</string>
+
+    <!-- My Bids Screen -->
+    <string name="screen_my_bids">MY BIDS</string>
+    <string name="my_bids_text">This is where the items you bid on will live.\n\nWe hope that \"fear is competition\" is not the reason why there are no bids here. Head over to the auction list to find something to bid on.\n\nOWN IT.</string>
+    <string name="my_bids_auctions">Auctions</string>
+
+    <!--More Screen -->
+    <string name="screen_more">MORE</string>
+    <string name="more_auctions">Auctions</string>
+    <string name="more_about">ABOUT</string>
+    <string name="more_shipping_info">SHIPPING INFO</string>
+    <string name="more_credit_cards">CREDIT CARDS</string>
+    <string name="more_privacy_policy">PRIVACY POLICY</string>
+    <string name="more_terms_and_conditions">TERMS AND CONDITIONS</string>
+    <string name="more_login">LOG IN</string>
+    <string name="more_logout">LOG OUT</string>
+
+    <!-- About Screen -->
+    <string name="screen_about">ABOUT</string>
+    <string name="about_more">More</string>
+
+    <!-- Privacy Policy Screen -->
+    <string name="screen_privacy_policy">PRIVACY POLICY</string>
+    <string name="privacy_more">More</string>
+
+    <!-- Terms and Conditions Screen -->
+    <string name="screen_terms">TERMS</string>
+    <string name="terms_more">More</string>
+
+    <!-- Shipping Screen -->
+    <string name="screen_shipping">SHIPPING</string>
+    <string name="shipping_more">More</string>
+
+    <string name="shipping_title">Where should we ship your winnings?</string>
+    <string name="shipping_contact">Contact Information</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="shipping_save">Save</string>
+
+    <!-- Credit Cards Screen -->
+    <string name="screen_cards">CREDIT CARDS</string>
+    <string name="cards_more">More</string>
+    <string name="cards_add">Add</string>
+
+    <!-- Credit Cards Screen -->
+    <string name="cards_holder">Tap the “+” above to add a credit card to your profile.\n\nBest to do it now and not at the moment you’re trying to outbid someone for that historic sports item!</string>
+
+    <string name="screen_cards_add">ADD CARD</string>
+    <string name="cards_add_more">Back</string>
+    <string name="cards_add_save">Save</string>
+    <string name="cards_add_placeholder">Welcome to Add a Credit Card!</string>
+
+    <!-- Login Screen -->
+    <string name="screen_login">LOGIN</string>
+    <string name="login_more">More</string>
+    <string name="login_title">Please Log In</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Log In</string>
+    <string name="login_register_title">Don\'t have an account?</string>
+    <string name="login_register_button">Register</string>
+
+    <!-- Register Screen -->
+    <string name="screen_register">REGISTER</string>
+    <string name="register_more">Login</string>
+    <string name="register_title">Please Register</string>
+    <string name="register_name">Name</string>
+    <string name="register_email">Email</string>
+    <string name="register_password">Password</string>
+    <string name="register_button">Register</string>
+
+    <!-- Auction Details Screen -->
+    <string name="screen_auction_item_details">DETAILS</string>
+    <string name="current_bid">Current Bid</string>
+    <string name="place_bid">Place Bid</string>
+    <string name="auctions_item_details_auction_items">Items</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--My Bids-->
+    <string name="my_bids_topbidder_won">YOU WON! THANK YOU FOR YOUR PURCHASE!</string>
+    <string name="my_bids_closed">BIDDING CLOSED</string>
+    <string name="my_bids_auction_closed">AUCTION CLOSED</string>
+    <string name="my_bids_won">YOU WON!</string>
+    <string name="my_bids_topbidder_outbid">YOU WERE OUTBID! BID AGAIN!</string>
+    <string name="my_bids_topbidder">YOU ARE TOP BIDDER!</string>
+    <string name="bid_pending">Pending</string>
+    <string name="bid_purchased">Purchased</string>
+    <string name="bid_closed">Bidding Closed</string>
+
+    <!--Bids Status-->
+    <string name="closing_bid_amount">Closing Bid $%s</string>
+    <string name="top_bid_amount">You are the top bidder at $%s</string>
+    <string name="top_bid_won">You won with a bid of $%s</string>
+    <string name="bid_its_yours">It\'s Yours</string>
+    <string name="bid_tap_to_pay">Tap to Pay</string>
+    <string name="no_bids">No Bids</string>
+    <string name="current_bid_amount">Current Bid $%s</string>
+    <string name="submit_bid">SUBMIT</string>
+    <string name="current_bid_info">Before submitting your bid we will ask you to provide your contact, shipping and credit card information.</string>
+
+    <!--Bid-->
+    <string name="screen_bid">BID</string>
+    <string name="enter_bid">Enter Bid :</string>
+    <string name="bid_shipping_info_dialog_title">Shipping Info</string>
+    <string name="bid_shipping_info_dialog_message">Please enter your shipping information.</string>
+    <string name="bid_contact_info_dialog_title">Contact Info</string>
+    <string name="bid_contact_info_dialog_message">Please enter your contact information.</string>
+    <string name="bid_credit_card_info_dialog_title">Credit Card Info</string>
+    <string name="bid_credit_card_info_dialog_message">Please add a card.</string>
+    <string name="enter_bid_amount">%s</string>
+    <string name="enter_bid_hint">Enter Bid</string>
+    <string name="action_my_bids">My Bids</string>
+    <string name="action_more">More</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="card_number">Card Number</string>
+    <string name="enter_card_number">Enter Credit Card Number</string>
+    <string name="expires">Expires</string>
+    <string name="cvv">CVV</string>
+    <string name="email">Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password">&lt;u>Forgot Password &lt;/u></string>
+    <string name="login_policy">By creating an account and using , you agree to the Terms of Use and acknowledge you have read the Privacy Policy</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="buy">BUY</string>
+    <string name="payment_title">Please review your purchase of item name here</string>
+    <string name="ship_me">Ship to me at:</string>
+    <string name="change">Change</string>
+    <string name="contact_me">Contact me at:</string>
+
+    <!--Payment..-->
+    <string name="payment_address">%1$s  \n %2$s  \n %3$s  \n %4$s </string>
+    <string name="contact_me_info">%1$s  \n %2$s </string>
+    <string name="pay_with">Pay with:</string>
+    <string name="payment_card_info">%1$s \n %2$s</string>
+    <string name="screen_payment">PAYMENT</string>
+    <string name="dialog_forgot_password_title">Forgot Password</string>
+    <string name="dialog_forgot_password_msg">Enter email below to receive an email with a link to reset your password.</string>
+    <string name="dialog_forgot_password_postive_buttton_id">Send</string>
+    <string name="dialog_forgot_password_negative_buttton_id">Cancel</string>
+    <string name="dialog_success_postive_buttton_id">OK</string>
+    <string name="dialog_success_title">Hooray</string>
+    <string name="dialog_success_msg">Got it.  We found your email address and you will receive an email with a link to reset your password shortly.</string>
+    <string name="dialog_failure_postive_buttton_id">Try Again</string>
+    <string name="dialog_failure_title">Email address not found</string>
+
+    <string name="dialog_email_issue_title">Email Issue</string>
+    <string name="dialog_email_issue_msg">The email address entered is invalid. \\n A valid email address looks like \\n \'johndoe@apple.com\'.</string>
+
+    <!--Common -->
+    <string name="typeface_font_family_roboto">Roboto-Light</string>
+    <string name="typeface_font_family_avenir">Avenir</string>
+    <string name="credit_card_delete">Delete</string>
+    <string name="credit_card_undo">Cancel</string>
+    <string name="screen_update_card">UPDATE CARD</string>
+    <string name="update_card_number">Card Number</string>
+    <string name="expires_card_hint">Expires e.g. 2/20</string>
+
+</resources>

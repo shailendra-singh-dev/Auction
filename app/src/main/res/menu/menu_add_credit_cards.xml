@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shail.auctionapp.ui.common.Activity">
+    <item
+        android:id="@+id/action_save_card"
+        android:icon="@drawable/ic_check"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/payment_info_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buy"
+        android:layout_marginLeft="@dimen/payment_margin_left"
+        android:layout_marginRight="@dimen/payment_margin_left"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/payment_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_title_text_size" />
+
+            <!--Ship to me-->
+            <RelativeLayout
+                android:id="@+id/ship_me_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_margin_bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/login_margin_bottom"
+                    android:gravity="center"
+                    android:text="@string/ship_me"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/login_title_text_size" />
+
+                <TextView
+                    android:id="@+id/ship_me_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/change"
+                    android:textColor="@color/_button_bg"
+                    android:textSize="@dimen/login_title_text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ship_me_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:background="@drawable/rectangle_grey"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="@string/payment_address"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_title_text_size" />
+
+            <!--Contact me-->
+            <RelativeLayout
+                android:id="@+id/contact_me_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_margin_bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/login_margin_bottom"
+                    android:gravity="center"
+                    android:text="@string/contact_me"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/login_title_text_size" />
+
+                <TextView
+                    android:id="@+id/contact_me_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/change"
+                    android:textColor="@color/_button_bg"
+                    android:textSize="@dimen/login_title_text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/contact_me_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:background="@drawable/rectangle_grey"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="@string/contact_me_info"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_title_text_size" />
+
+            <!--Pay with-->
+            <RelativeLayout
+                android:id="@+id/pay_with_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_margin_bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/login_margin_bottom"
+                    android:gravity="center"
+                    android:text="@string/pay_with"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/login_title_text_size" />
+
+                <TextView
+                    android:id="@+id/pay_with_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/change"
+                    android:textColor="@color/_button_bg"
+                    android:textSize="@dimen/login_title_text_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pay_with_card_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_grey"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:id="@+id/pay_with_card_image"
+                    android:layout_width="@dimen/credit_card_type_image_width"
+                    android:layout_height="@dimen/credit_card_type_image_width"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/payment_margin_left"
+                    android:layout_marginRight="@dimen/payment_margin_left"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/pay_with_card_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="@string/payment_card_info"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/login_title_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buy"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/place_bid_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/_button"
+        android:text="@string/buy"
+        android:textAllCaps="false"
+        android:textColor="@color/auction_item_details_button"
+        android:textSize="@dimen/more_screen_options_size"
+        android:textStyle="bold" />
+</RelativeLayout>

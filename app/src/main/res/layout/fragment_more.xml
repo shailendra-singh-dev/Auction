@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/more_about"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more_options_height"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center|start"
+            android:text="@string/more_about"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_screen_options_size" />
+
+        <TextView
+            android:id="@+id/more_shipping_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more_options_height"
+            android:layout_below="@id/more_about"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center|start"
+            android:text="@string/more_shipping_info"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_screen_options_size" />
+
+        <TextView
+            android:id="@+id/more_credit_cards"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more_options_height"
+            android:layout_below="@id/more_shipping_info"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center|start"
+            android:text="@string/more_credit_cards"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_screen_options_size" />
+
+        <TextView
+            android:id="@+id/more_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more_options_height"
+            android:layout_below="@id/more_credit_cards"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center|start"
+            android:text="@string/more_privacy_policy"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_screen_options_size" />
+
+        <TextView
+            android:id="@+id/more_terms_and_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more_options_height"
+            android:layout_below="@id/more_privacy_policy"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center|start"
+            android:text="@string/more_terms_and_conditions"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_screen_options_size" />
+
+        <TextView
+            android:id="@+id/more_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more_options_height"
+            android:layout_below="@id/more_terms_and_conditions"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center|start"
+            android:text="@string/more_login"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_screen_options_size" />
+
+        <TextView
+            android:id="@+id/more_logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/more_terms_and_conditions"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center|start"
+            android:text="@string/more_logout"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_screen_options_size" />
+
+        <TextView
+            android:id="@+id/more_app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_screen_build_info" />
+
+    </RelativeLayout>
+</LinearLayout>

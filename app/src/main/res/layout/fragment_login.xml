@@ -1,0 +1,148 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg_white"
+    tools:context="com.shail.auctionapp.ui.fragments.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/login_email_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:text="@string/login_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/login_title_text_size" />
+
+        <LinearLayout
+            android:id="@+id/edit_email_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/email"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_title_text_size" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:ems="10"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress"
+                android:typeface="normal"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_password_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/login_password"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_title_text_size" />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:ems="10"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_login"
+            style="@style/Base.TextAppearance.AppCompat"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/login_button_margin_bottom"
+            android:background="@color/_button_bg"
+            android:text="@string/login_button"
+            android:textAllCaps="false"
+            android:textColor="@color/fragment_bg_white" />
+
+        <TextView
+            android:id="@+id/login_register_title_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/credit_card_row_horizontal_spacing"
+            android:layout_marginTop="@dimen/credit_card_row_horizontal_spacing"
+            android:gravity="center"
+            android:text="@string/login_register_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/login_title_text_size" />
+
+        <Button
+            android:id="@+id/button_register"
+            style="@style/Base.TextAppearance.AppCompat"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/_button_bg"
+            android:text="@string/login_register_button"
+            android:textAllCaps="false"
+            android:textColor="@color/fragment_bg_white" />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/forgot_password_margin_bottom"
+            android:layout_marginTop="@dimen/more_options_height"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/login_title_text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/activity_vertical_margin"
+            android:singleLine="false"
+            android:text="@string/login_policy"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/auction_sponsoredby" />
+    </LinearLayout>
+</ScrollView>
+
+

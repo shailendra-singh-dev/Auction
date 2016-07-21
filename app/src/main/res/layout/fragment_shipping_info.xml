@@ -1,0 +1,181 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/fragment_bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/shipping_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/shipping_title"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/shipping_contact_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shipping_title"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="@string/shipping_contact"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/shipping_contact_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/shipping_contact_id"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ship_first_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:nextFocusRight="@+id/ship_last_name"
+                android:hint="First Name"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+            <EditText
+                android:id="@+id/ship_last_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:hint="Last Name"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ship_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/shipping_contact_parent"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/rectangle_rounded"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="Enter Phone"
+            android:inputType="number"
+            android:padding="@dimen/enter_bid_padding_horizontal" />
+
+        <EditText
+            android:id="@+id/ship_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/ship_phone"
+            android:layout_marginBottom="@dimen/credit_card_row_horizontal_spacing"
+            android:background="@drawable/rectangle_rounded"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/enter_bid_padding_horizontal" />
+
+
+        <TextView
+            android:id="@+id/shipping_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ship_email"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/shipping_address"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ship_address1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/shipping_address"
+            android:layout_marginBottom="@dimen/credit_card_row_horizontal_spacing"
+            android:background="@drawable/rectangle_rounded"
+            android:singleLine="true"
+            android:hint="Enter Address 1"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/enter_bid_padding_horizontal" />
+
+        <EditText
+            android:id="@+id/ship_address2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/ship_address1"
+            android:layout_marginBottom="@dimen/credit_card_row_horizontal_spacing"
+            android:background="@drawable/rectangle_rounded"
+            android:singleLine="true"
+            android:hint="Enter Address 2"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/enter_bid_padding_horizontal" />
+
+
+        <LinearLayout
+            android:id="@+id/ship_address_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enter_bid_box_height"
+            android:layout_below="@id/ship_address2"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ship_city"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/login_margin_bottom"
+                android:layout_weight="5"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:nextFocusRight="@+id/ship_state"
+                android:hint="Enter City"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+            <EditText
+                android:id="@+id/ship_state"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/login_margin_bottom"
+                android:layout_weight="2"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:nextFocusRight="@+id/ship_zip"
+                android:hint="State"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+
+            <EditText
+                android:id="@+id/ship_zip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/rectangle_rounded"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:ems="10"
+                android:hint="Zip Code"
+                android:inputType="number"
+                android:padding="@dimen/enter_bid_padding_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+

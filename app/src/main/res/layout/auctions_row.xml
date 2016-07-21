@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shail.auctionapp.views.AspectRatioRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/auction_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:id="@+id/auction_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle_grey"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/auctions_title_left_padding"
+        android:singleLine="true"
+        android:textColor="@color/fragment_bg_white"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/auction_title" />
+
+</com.shail.auctionapp.views.AspectRatioRelativeLayout>
