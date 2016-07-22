@@ -55,7 +55,7 @@
         <activity
             android:windowSoftInputMode="adjustResize"
             android:launchMode="singleTop"
-            android:name="com.shail.auctionapp.ui.common.Activity"
+            android:name="com.shail.auctionapp.ui.common.BaseLauncherActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ActivitiesTheme" />
 
