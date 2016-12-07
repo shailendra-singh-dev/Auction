@@ -36,8 +36,8 @@ android {
         release {
             keyAlias 'keyAlias'
             keyPassword 'keyPassword'
-            storeFile file('/Users/peter/storeFile.jks')
-            storePassword ".Android"
+            storeFile file('sample.jks')
+            storePassword "sample"
         }
     }
 
